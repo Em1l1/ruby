@@ -23,8 +23,11 @@ class Dog < Pet
 end
 
 class Snake < Pet
-  def smith
-    puts 'Smith'
+  def pierro
+    puts name = 'Pierro'
+    puts age = 3
+    puts gender = 'Female'
+    puts color = 'yellow and black'
   end
 end
 
@@ -33,15 +36,9 @@ will = Cat.new
 puts will.will
 
 cortes = Dog.new
-#puts cortes.name = 'Cortes'
-#puts cortes.age = 4
-#puts cortes.gender = 'Male'
-#puts cortes.color = 'Black'
 puts cortes.cortes
 
 pierro = Snake.new
-puts pierro.name = 'Pierro'
-puts pierro.age = 3
-puts pierro.gender = 'Female'
-puts pierro.color = 'yellow and black'
+puts pierro.pierro
+
 
