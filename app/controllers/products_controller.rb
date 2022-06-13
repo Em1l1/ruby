@@ -1,6 +1,6 @@
 class ProductsController <  ApplicationController
 	def index
-		@products = Product.all
+		@products = Product.all.with_attached_photo
 	end
 
 	def show
@@ -23,6 +23,7 @@ class ProductsController <  ApplicationController
 
 	def edit
 		product 
+	end
 
 	def update
 		if product.update(product_params)
