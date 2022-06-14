@@ -1,7 +1,19 @@
-<h1><%= t('.title') %></h1>
+<%= turbo_frame_tag 'categories' do %>
+  <h1><%= t('.title') %></h1>
 
-<%= link_to t('.all'), products_path %>
+  <%= form_with url: products_path, method: :get do |form| %>
 
-<%= render partial: 'category', collection: @categories %>
+    <%= form.text_field :query_text, placeholder: t('.query_text'), onChange: 'this.form.requestSubmit()', value: params[:query_text] %>
 
-<%= render partial: 'product', collection: @products %>
+    <%= form.number_field :min_price, placeholder: t('.min_price'), onChange: 'this.form.requestSubmit()', value: params[:min_price] %>
+
+    <%= form.number_field :max_price, placeholder: t('.max_price'), onChange: 'this.form.requestSubmit()', value: params[:max_price] %>
+  <% end %>
+
+  <%= link_to t('.all'), products_path %>
+
+  <%= render partial: 'category', collection: @categories %>
+
+  <%= render partial: 'product', collection: @products %>
+
+<% end %>
