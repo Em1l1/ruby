@@ -20,6 +20,12 @@ class Dog < Pet
     puts gender = 'Male'
     puts color = 'Black'
   end
+
+  def bark(i)
+    i.times do
+      puts "Woff!"
+    end
+  end
 end
 
 class Snake < Pet
@@ -37,6 +43,9 @@ puts will.will
 
 cortes = Dog.new
 puts cortes.cortes
+
+my_dog = Dog.new
+my_dog.bark(4)
 
 pierro = Snake.new
 puts pierro.pierro
