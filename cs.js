@@ -16,9 +16,13 @@ let colores = ["Blanco", "Negro", "azul"]
 
 objeto.correo = "jonmircha@mail.com"
 objeto.profesion = "Backend"
+objet.gender = "male"
+objet.country = "USA"
 
 colores.push("Anaranjado")
 colores.push("White")
+colores.push("yellow")
+colores.push("red");
 
 console.log(objeto)
 console.log(colores)
