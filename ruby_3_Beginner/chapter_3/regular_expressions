@@ -1,0 +1,11 @@
+Character               Meaning
+^                       anchor for the beginning of a line
+$                       anchor for the end of a line
+\A                      anchor for the start of a string
+\z                      anchor for the end of a string
+.                       any character
+\w                      any letter, digit, or underscore
+\W                      anything that \w doesn’t match
+\d                      any digit
+\D                      anything that \d doesn’t match (non-digits)
+\s                      whitespace (spaces, tabs, newlines, and so on)
