@@ -53,6 +53,6 @@ x = [1, 2, 3]
 puts x.first(2).join("-")
 
 puts ''
-puts 'Reversing the Order of the Array Elements'
+puts "Reversing the Order of the Array's Elements"
 x = [1, 2, 3]
 p x.reverse
