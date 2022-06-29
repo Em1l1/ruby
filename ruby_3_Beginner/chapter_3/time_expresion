@@ -1,0 +1,13 @@
+Method      What the Method Returns
+hour        A number representing the hour in 24-hour (e,g., 21 for 9 p.m.)
+min         The number of minutes past the hour
+sec         The number of seconds pat the minute
+usec        The number o microseconds pat the seconds (there are 1,000,000) microseconds per second
+day         The number of the day in the month
+mday        Synonym ofr the day method, considered to be "month" day
+wday        The day of the day in terms of the week (Sunday is o, Saturday is 6)
+yday        The number of the day in terms of the year
+month       The number of the month of the date (e.g., 11 for November)
+zone        Returns the name of the time zone associated with the time
+utc?        Returns true of false depending on if the time/date is in the UTC/GMT time zone or not
+gmt?        Synonym of the utc? method for those who prefer to use the term GMT
