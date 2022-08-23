@@ -16,8 +16,8 @@ let colores = ["Blanco", "Negro", "azul"]
 
 objeto.correo = "jonmircha@mail.com"
 objeto.profesion = "Backend"
-objet.gender = "male"
-objet.country = "USA"
+objeto.gender = "male"
+objeto.country = "USA"
 
 colores.push("Anaranjado")
 colores.push("White")
